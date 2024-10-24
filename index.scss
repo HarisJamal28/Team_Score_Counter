@@ -1,0 +1,432 @@
+#Badmentan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#Holder{
+    display: flex;
+    // border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: greenyellow;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+body{
+    background-color: rgba(128, 255, 0, 0.413);
+    overflow-x: hidden;
+}
+
+#Left{
+    background-color: green;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+#Right{
+    background-color: green;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+#divide{
+    height: 100%;
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+#Left_Score{
+    padding: 10px;
+    // border: 1px solid black;
+    height: 70%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#Right_Score{
+    padding: 10px;
+    // border: 1px solid black;
+    height: 70%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem;
+    background-color: chartreuse;
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+
+
+#savebutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    // border: 1px solid green;
+    background-color: chartreuse;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#Left_Score{
+    font-size: 64px;
+}
+
+#Right_Score{
+    font-size: 64px;
+}
+
+#SideControls{
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid black;
+    // padding: 10px;
+    aside{
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+#Holder2{
+    display: flex;
+    // border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: greenyellow;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    min-width: 200px;
+    // box-shadow: 0px 0px 10px 1px green;
+}
+
+#L_add{
+    padding: 15px;
+    
+    background-color: green;
+    font-weight: 700;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    // border: 1px solid black;
+
+}
+#L_min{
+    padding: 15px;
+    
+    background-color: green;
+    font-weight: 700;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    // border: 1px solid black;
+
+}
+#R_add{
+    padding: 15px;
+    
+    background-color: green;
+    font-weight: 700;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    // border: 1px solid black;
+
+}
+#R_min{
+    padding: 15px;
+    
+    background-color: green;
+    font-weight: 700;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    // border: 1px solid black;
+
+}
+
+table{
+    background-color: green;
+
+    thead{
+
+    tr{
+        // border: 1px solid red;
+
+        th{
+            padding: 1rem;
+            text-wrap: nowrap;
+        }
+    }
+    }
+    tbody{
+    tr{
+        background-color: greenyellow;
+        border-bottom: 1px solid green;
+        td{
+            padding: 1rem;
+        }
+    }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #Holder{
+        display: flex;
+        // border: 1px solid black;
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+        background-color: greenyellow;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    #Holder2{
+        display: flex;
+        // border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background-color: greenyellow;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        min-width: 200px;
+    }
+
+    #Left{
+        background-color: green;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        H1{
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    #Right{
+        background-color: green;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        H1{
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    #divide{
+        height: 100%;
+        background-color: greenyellow;
+        padding: 10px;
+    }
+    
+    #Left_Score{
+        padding: 10px;
+        // border: 1px solid black;
+        height: 70%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    #Right_Score{
+        padding: 10px;
+        // border: 1px solid black;
+        height: 70%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    #Logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        // border: 1px solid green;
+        background-color: chartreuse;
+        &:hover{
+            cursor: pointer;
+        }
+    
+    }
+    
+    
+    #savebutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        // border: 1px solid green;
+        background-color: chartreuse;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    #Left_Score{
+        font-size: 3rem;
+    }
+    
+    #Right_Score{
+        font-size: 3rem;
+    }
+    
+    #SideControls{
+        display: flex;
+        justify-content: space-between;
+        // border: 1px solid black;
+        // padding: 10px;
+        aside{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+    
+    #L_add{
+        padding: 15px;
+        
+        background-color: green;
+        font-weight: 700;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        // border: 1px solid black;
+    
+    }
+    #L_min{
+        padding: 15px;
+        
+        background-color: green;
+        font-weight: 700;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        // border: 1px solid black;
+    
+    }
+    #R_add{
+        padding: 15px;
+        
+        background-color: green;
+        font-weight: 700;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        // border: 1px solid black;
+    
+    }
+    #R_min{
+        padding: 15px;
+        
+        background-color: green;
+        font-weight: 700;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        // border: 1px solid black;
+    
+    }
+
+    table{
+        background-color: green;
+    
+        thead{
+    
+        tr{
+            // border: 1px solid red;
+    
+            th{
+                padding: 0.5rem;
+                text-wrap: nowrap;
+                font-size: 0.6rem;
+
+                &:nth-of-type(1){
+                    color: greenyellow;
+                }
+                &:nth-of-type(2){
+                    color: greenyellow;
+                }
+            }
+        }
+        }
+        tbody{
+        tr{
+            background-color: greenyellow;
+            border-bottom: 1px solid green;
+            td{
+                padding: 0.5rem;
+                font-size: 1rem;
+                &:last-child{
+                    font-size: 0.5rem;
+                    border-left: 1px solid green;
+                }
+                &:first-child{
+                    border-right: 1px solid green;
+                }
+            }
+        }
+        }
+    }
+}
+
